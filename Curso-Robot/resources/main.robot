@@ -1,6 +1,10 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    FakerLibrary    Locale=pt_BR
+Library    FakerLibrary    locale=pt_BR
 
+### Shared ###
 Resource    shared/setup_teardown.robot
-Resource    pages/cadastro.robot
+
+
+### Pages ###
+Resource    pages/cadastro_organo.robot
